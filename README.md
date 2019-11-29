@@ -1,2 +1,2 @@
 # java-development
-Learing Java
+Learning Java
