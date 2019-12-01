@@ -19,11 +19,11 @@ public class DateDemo {
 		int y = sc.nextInt();
 		sc.close();
 
-		Date dob = new Date();
-		dob.day = d;
-		dob.month = m;
-		dob.year = y;
+		Date dob = new Date(d,m,y);
 		displayDate(dob);	
+		
+		Date dob1 = new Date(29,2,2015);
+		displayDate(dob1);
 
 	}
 }
