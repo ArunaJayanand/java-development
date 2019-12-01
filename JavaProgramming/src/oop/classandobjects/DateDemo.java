@@ -1,0 +1,29 @@
+package oop.classandobjects;
+
+import java.util.Scanner;
+
+public class DateDemo {
+
+	public static void displayDate(Date dob) {
+		System.out.println("Birthday is " + dob.month + "/" + dob.day + "/" + dob.year);
+	}
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the day :");
+		int d = sc.nextInt();
+		System.out.println("Enter month :");
+		int m = sc.nextInt();
+		System.out.println("Enter year :");
+		int y = sc.nextInt();
+		sc.close();
+
+		Date dob = new Date();
+		dob.day = d;
+		dob.month = m;
+		dob.year = y;
+		displayDate(dob);	
+
+	}
+}
